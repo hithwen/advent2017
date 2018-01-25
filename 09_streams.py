@@ -17,11 +17,9 @@ def find_groups(input_stream):
     for c in input_stream:
         if cancel_next:
             cancel_next = False
-            continue
-        if c == '!':
+        elif c == '!':
             cancel_next = True
-            continue
-        if not open_garbage:
+        elif not open_garbage:
             if c == '<':
                 open_garbage = True
             elif c == '{':
