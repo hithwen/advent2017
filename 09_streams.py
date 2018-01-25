@@ -12,7 +12,6 @@ examples = [
 def find_groups(input_stream):
     open_groups = 0
     open_garbage = False
-    clean_stream = ''
     cancel_next = False
     score = 0
     for c in input_stream:
