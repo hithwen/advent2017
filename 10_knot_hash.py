@@ -4,6 +4,7 @@ def knot(list_size=256, lenghts=[]):
     skip_size = 0
     for lenght in lenghts:
         section = []
+        # this could be done with just one for loop and the right indexe arithmetics
         for i in range(current_pos, current_pos + lenght):
             section.append(numbers[i % list_size])
 
